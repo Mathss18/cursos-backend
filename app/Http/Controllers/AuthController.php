@@ -20,7 +20,7 @@ class AuthController extends Controller
 
         $token = auth()->user()->createToken('bearer');
 
-        return response()->json(ResponseService::respond(false, 200, 'Success', $token->plainTextToken), 401);
+        return response()->json(ResponseService::respond(true, 200, 'Success', $token->plainTextToken), 200);
     }
 
     public function register(Request $request)
@@ -46,5 +46,15 @@ class AuthController extends Controller
         auth()->user()->currentAccessToken()->delete(); // removes current user tokens
 
         return response()->json(ResponseService::respond(true, 204, 'Logout Success'), 204);
+    }
+
+    public function videos(Request $request)
+    {
+        return response()->json(ResponseService::respond(true, 200, 'Success', [
+            'https://youtu.be/e78_5WIssSU',
+            'https://youtu.be/0UGJRHq2PS4',
+            'https://youtu.be/BhDm2qGy780',
+            'https://youtu.be/YJyY6A_MOQc',
+        ]), 200);
     }
 }
