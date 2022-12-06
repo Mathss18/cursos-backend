@@ -51,10 +51,30 @@ class AuthController extends Controller
     public function videos(Request $request)
     {
         return response()->json(ResponseService::respond(true, 200, 'Success', [
-            'https://youtu.be/e78_5WIssSU',
-            'https://youtu.be/0UGJRHq2PS4',
-            'https://youtu.be/BhDm2qGy780',
-            'https://youtu.be/YJyY6A_MOQc',
+            [
+                'url' => 'https://www.youtube.com/embed/az6OYFS7AUA',
+                'title' => 'Matemática Básica - Aula 1 - Adição',
+                'thumbnail' => 'https://i3.ytimg.com/vi/az6OYFS7AUA/maxresdefault.jpg',
+                'description'=> 'Vídeo de curso'
+            ],
+            [
+                'url' => 'https://www.youtube.com/embed/oSzh7TjIsjs',
+                'title' => 'Matemática Básica - Aula 2 - Subtração',
+                'thumbnail' => 'https://i3.ytimg.com/vi/oSzh7TjIsjs/maxresdefault.jpg',
+                'description'=> 'Vídeo de curso'
+            ],
+            [
+                'url' => 'https://www.youtube.com/embed/BetgRvNQEC0',
+                'title' => 'Matemática Básica - Aula 3 - Multiplicação',
+                'thumbnail' => 'https://i3.ytimg.com/vi/BetgRvNQEC0/maxresdefault.jpg',
+                'description'=> 'Vídeo de curso'
+            ],
+            [
+                'url' => 'https://www.youtube.com/embed/GpnfZHB3Rpw',
+                'title' => 'Matemática Básica - Aula 4 - Divisão',
+                'thumbnail' => 'https://i3.ytimg.com/vi/GpnfZHB3Rpw/maxresdefault.jpg',
+                'description'=> 'Vídeo de curso'
+            ],
         ]), 200);
     }
 }
