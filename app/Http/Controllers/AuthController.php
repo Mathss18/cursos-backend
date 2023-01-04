@@ -52,27 +52,27 @@ class AuthController extends Controller
     {
         return response()->json(ResponseService::respond(true, 200, 'Success', [
             [
-                'url' => 'https://www.youtube.com/embed/az6OYFS7AUA',
-                'title' => 'Matemática Básica - Aula 1 - Adição',
-                'thumbnail' => 'https://i3.ytimg.com/vi/az6OYFS7AUA/maxresdefault.jpg',
+                'url' => 'https://www.youtube.com/embed/ujnjkz2KXHA',
+                'title' => 'A OAB já liberou o marketing digital.',
+                'thumbnail' => 'https://i3.ytimg.com/vi/ujnjkz2KXHA/maxresdefault.jpg',
                 'description'=> 'Vídeo de curso'
             ],
             [
-                'url' => 'https://www.youtube.com/embed/oSzh7TjIsjs',
-                'title' => 'Matemática Básica - Aula 2 - Subtração',
-                'thumbnail' => 'https://i3.ytimg.com/vi/oSzh7TjIsjs/maxresdefault.jpg',
+                'url' => 'https://www.youtube.com/embed/ujnjkz2KXHA',
+                'title' => 'Faculdade NENHUMA te mostrou esse caminho!',
+                'thumbnail' => 'https://i3.ytimg.com/vi/B7lYuFFtpt0/maxresdefault.jpg',
                 'description'=> 'Vídeo de curso'
             ],
             [
-                'url' => 'https://www.youtube.com/embed/BetgRvNQEC0',
-                'title' => 'Matemática Básica - Aula 3 - Multiplicação',
-                'thumbnail' => 'https://i3.ytimg.com/vi/BetgRvNQEC0/maxresdefault.jpg',
+                'url' => 'https://www.youtube.com/embed/EIzashjwA3k',
+                'title' => 'Você não fica sem dinheiro por sua Holding não ter atividade econômica.',
+                'thumbnail' => 'https://i3.ytimg.com/vi/EIzashjwA3k/maxresdefault.jpg',
                 'description'=> 'Vídeo de curso'
             ],
             [
-                'url' => 'https://www.youtube.com/embed/GpnfZHB3Rpw',
-                'title' => 'Matemática Básica - Aula 4 - Divisão',
-                'thumbnail' => 'https://i3.ytimg.com/vi/GpnfZHB3Rpw/maxresdefault.jpg',
+                'url' => 'https://www.youtube.com/embed/dau3lHmU5eU',
+                'title' => 'Seus clientes precisam conhecer esse número!',
+                'thumbnail' => 'https://i3.ytimg.com/vi/dau3lHmU5eU/maxresdefault.jpg',
                 'description'=> 'Vídeo de curso'
             ],
         ]), 200);
